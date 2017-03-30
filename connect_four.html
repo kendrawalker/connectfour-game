@@ -1,0 +1,71 @@
+<!-- connect four -->
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="connect_four_stylesheet.css"/>
+</head>
+
+<body>
+  <h1>Let's Play Connect 4!</h1>
+  <div id ="game-board">
+    <div class="token-slot col1 row1 clickable" id="col1row1"></div>
+    <div class="token-slot col2 row1 clickable" id="col2row1"></div>
+    <div class="token-slot col3 row1 clickable" id="col3row1"></div>
+    <div class="token-slot col4 row1 clickable" id="col4row1"></div>
+    <div class="token-slot col5 row1 clickable" id="col5row1"></div>
+    <div class="token-slot col6 row1 clickable" id="col6row1"></div>
+    <div class="token-slot col7 row1 clickable" id="col7row1"></div>
+    <div class="token-slot col1 row2" id="col1row2"></div>
+    <div class="token-slot col2 row2" id="col2row2"></div>
+    <div class="token-slot col3 row2" id="col3row2"></div>
+    <div class="token-slot col4 row2" id="col4row2"></div>
+    <div class="token-slot col5 row2" id="col5row2"></div>
+    <div class="token-slot col6 row2" id="col6row2"></div>
+    <div class="token-slot col7 row2" id="col7row2"></div>
+    <div class="token-slot col1 row3" id="col1row3"></div>
+    <div class="token-slot col2 row3" id="col2row3"></div>
+    <div class="token-slot col3 row3" id="col3row3"></div>
+    <div class="token-slot col4 row3" id="col4row3"></div>
+    <div class="token-slot col5 row3" id="col5row3"></div>
+    <div class="token-slot col6 row3" id="col6row3"></div>
+    <div class="token-slot col7 row3" id="col7row3"></div>
+    <div class="token-slot col1 row4" id="col1row4"></div>
+    <div class="token-slot col2 row4" id="col2row4"></div>
+    <div class="token-slot col3 row4" id="col3row4"></div>
+    <div class="token-slot col4 row4" id="col4row4"></div>
+    <div class="token-slot col5 row4" id="col5row4"></div>
+    <div class="token-slot col6 row4" id="col6row4"></div>
+    <div class="token-slot col7 row4" id="col7row4"></div>
+    <div class="token-slot col1 row5" id="col1row5"></div>
+    <div class="token-slot col2 row5" id="col2row5"></div>
+    <div class="token-slot col3 row5" id="col3row5"></div>
+    <div class="token-slot col4 row5" id="col4row5"></div>
+    <div class="token-slot col5 row5" id="col5row5"></div>
+    <div class="token-slot col6 row5" id="col6row5"></div>
+    <div class="token-slot col7 row5" id="col7row5"></div>
+    <div class="token-slot col1 row6" id="col1row6"></div>
+    <div class="token-slot col2 row6" id="col2row6"></div>
+    <div class="token-slot col3 row6" id="col3row6"></div>
+    <div class="token-slot col4 row6" id="col4row6"></div>
+    <div class="token-slot col5 row6" id="col5row6"></div>
+    <div class="token-slot col6 row6" id="col6row6"></div>
+    <div class="token-slot col7 row6" id="col7row6"></div>
+  </div>
+  <button id="button">Reset Game</button>
+  <div id="player-instructions">
+    <h3>How to Play:</h3>
+    <ul>
+      <li>This is a 2 player game: Red Player and Black Player.</li>
+      <li>Red player goes first.</li>
+      <li>Click on a token slot in the top row to select which column your token will fall.</li>
+      <li>Whichever player gets 4 of his/her tokens in a row horizontally, vertically, or diagonally wins.</li>
+      <li>When a winner is identified, hit the red button to reset the game.</li>
+    </ul>
+  </div>
+  <script type="text/javascript" src="connect_four_jscript.js"></script>
+</body>
+
+</html>
